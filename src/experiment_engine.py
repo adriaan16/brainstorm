@@ -6,7 +6,9 @@ import time
 import cv2
 import keras.backend as K
 import numpy as np
-import tensorflow as tf
+#import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 from keras.utils import generic_utils
 
 from src import experiment_base
